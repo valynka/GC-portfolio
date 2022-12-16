@@ -13,13 +13,13 @@ html.h-100(lang='ru')
   body.h-100 
     .container-fluid.h-100.bg-dark
       .row 
-        .col
-          h1.text-white.text-uppercase.fs-8.ls-1.ls-md-3.pt-6.pb-6.text-center Valinka
-          h2.text-white.text-uppercase.fs-7.ls-5.ls-md-2.pt-6.pb-6.text-center GetCourse
+        .col.first-screen
+          h1.text-white.text-uppercase.fs-8.ls-1.ls-md-3.pt-6.pb-6.text-center.animated-item._not-hide Valinka
+          h2.text-white.text-uppercase.fs-7.ls-5.ls-md-2.pt-6.pb-6.text-center.animated-item._not-hide GetCourse
     section.about-me.bg-light
       .container-xl 
         .row.pt-6.pb-6
-          .col-md-7.col-12.d-flex.flex-column.justify-content-center.pe-4.order-2.order-md-1
+          .col-md-7.col-12.d-flex.flex-column.justify-content-center.pe-4.order-2.order-md-1.text.animated-item._not-hide
             h2.mb-4 Привет!
             p
               | Меня зовут&nbsp;
@@ -39,15 +39,15 @@ html.h-100(lang='ru')
               | Ниже есть примеры работ на GetCourse. Портфолио frontend-разработчика и фотогалерею вы можете посмотреть на моем основном&nbsp;
               a.text-decoration-none.link-secondary(href='https://valinka.ru/' target='_blank' rel='noopener noreferrer') сайте.
           .col-md-5.col-12.d-flex.justify-content-center.order-1.order-md-2.mb-5.mb-md-0
-            img.w-75.w-md-100.rounded-circle(src='./images/ava.jpg' alt='my photo')
+            img.w-75.w-md-100.rounded-circle.avatar.animated-item._not-hide(src='./images/ava.jpg' alt='my photo')
     section.skills.bg-dark.text-white
       .container-xl
         .row.pt-6 
           .col 
-            h2.mb-4 Я помогу вам
+            h2.mb-4.animated-item._not-hide Я помогу вам
         .row.pb-6 
           .col-12.col-md-6 
-            ul.check-list 
+            ul.check-list.left.animated-item._not-hide 
               li Настроить аккаунт, домен, почту
               li Создать и настроить тренинги и уроки
               li С работой с пользователями (импорт, экспорт, выборки, сегменты)
@@ -55,7 +55,7 @@ html.h-100(lang='ru')
               li Настроить промоакции и партнерские программы
               li Построить и протестировать процессы
           .col-12.col-md-6
-            ul.check-list 
+            ul.check-list.right.animated-item._not-hide 
               li Осуществить интеграцию с Telegram (чат-бот), VK
               li Настроить платежную систему
               li Создать продукты и предложения
@@ -66,18 +66,18 @@ html.h-100(lang='ru')
       .container-xl 
         .row.pt-6.pb-6
           .col 
-            h2.mb-6.text-center Примеры работ
+            h2.mb-0.text-center.animated-item._not-hide Примеры работ
             include include/gallery.pug
     section.education.bg-dark.text-white
       .container-xl 
         .row.pt-6
           .col 
-            h2.mb-4 Курсы и образование
+            h2.mb-4.animated-item._not-hide Курсы и образование
             include include/education.pug
     footer.bg-light
       - const year = new Date().getFullYear(); 
       .container-xl.pt-4.pb-4
-        ul.footer-list.border-bottom.mb-0.pb-3
+        ul.footer-list.border-bottom.mb-0.pb-3.animated-item._not-hide
           li
             i.fas.fa-home.me-3
             | Москва, Россия
@@ -87,8 +87,9 @@ html.h-100(lang='ru')
           li
             i.fas.fa-phone.me-3
             a.text-decoration-none.link-secondary(href='tel:+79250577959') +7 925 057 79 59
-        p.text-center.mb-0.mt-3 
+        p.text-center.mb-0.mt-3.animated-item._not-hide 
           | ©
           | #{year}
           | Valinka.ru
-    script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')                   
+    script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')
+    script(src='./js/index.js')               

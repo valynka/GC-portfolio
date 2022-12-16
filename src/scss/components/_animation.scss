@@ -1,0 +1,184 @@
+.first-screen {
+	h1 {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	h2 {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0.3s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+}
+
+.about-me {
+	.avatar,
+	.text {
+		transform: scale(0);
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: scale(1);
+		}
+	}
+}
+
+.skills {
+	overflow: hidden;
+
+	h2 {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	.check-list {
+		&.left {
+			li {
+				transform: translate(-120%, 0);
+
+				transition: all 0.3s ease 0s;
+			}
+		}
+
+		&.right {
+			li {
+				transform: translate(120%, 0);
+
+				transition: all 0.3s ease 0s;
+			}
+		}
+
+		&.visible {
+			li {
+				transform: translate(0, 0);
+
+				@for $var from 1 to 7 {
+					$delay: $var * 0.2;
+					&:nth-child(#{$var}) {
+						transition: transform 0.8s ease #{$delay + s};
+					}
+				}
+			}
+		}
+	}
+}
+
+.portfolio {
+	h2 {
+		transform: translate(0, 180%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	.gallery {
+		transform: translate(0, 40%);
+		opacity: 0;
+
+		transition: all 0.5s ease 0.1s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+}
+
+.education {
+	overflow: hidden;
+
+	h2 {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	.education-list {
+		&.left {
+			li {
+				transform: translate(-120%, 0);
+
+				transition: all 0.3s ease 0s;
+			}
+		}
+
+		&.right {
+			li {
+				transform: translate(120%, 0);
+
+				transition: all 0.3s ease 0s;
+			}
+		}
+
+		&.visible {
+			li {
+				transform: translate(0, 0);
+
+				@for $var from 1 to 6 {
+					$delay: $var * 0.2;
+					&:nth-child(#{$var}) {
+						transition: transform 0.8s ease #{$delay + s};
+					}
+				}
+			}
+		}
+	}
+}
+
+footer {
+	ul {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	p {
+		transform: translate(0, 120%);
+		opacity: 0;
+
+		transition: all 0.8s ease 0.3s;
+
+		&.visible {
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+}

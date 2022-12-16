@@ -13,14 +13,14 @@
 
 .row.pb-6     
   .col-12.col-md-6 
-    ul.education-list
+    ul.education-list.left.animated-item._not-hide
       each place in educationPlaces
         if place.column === 1
           li!= place.school 
             p!= place.course 
             p= place.period       
   .col-12.col-md-6
-    ul.education-list
+    ul.education-list.right.animated-item._not-hide
       each place in educationPlaces 
         if place.column === 2
           li!= place.school 

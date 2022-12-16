@@ -1,0 +1,21 @@
+$utilities: map-merge(
+    $utilities,
+    (
+        "letter-spacing": (
+        rfs: true,
+        responsive: true,
+        property: letter-spacing,
+        class: ls,
+        values: (
+            1: 1rem,
+            2: 2rem,
+            3: 3rem,
+            5: 0.5rem
+        )
+      ),
+      "width": map-merge(
+			map-get($utilities, "width"),
+			( responsive: true ),
+		),
+    )    
+);

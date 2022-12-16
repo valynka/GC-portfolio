@@ -1,0 +1,15 @@
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    gap: map.get($spacers, 4);
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .fas {
+        font-family: FontAwesome;
+    }
+}

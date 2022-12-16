@@ -1,0 +1,38 @@
+- 
+    const gcImages = [
+        {img: './images/gc-01.jpg', alt: 'Процесс - напоминание об оплате', title: 'Процесс - напоминание об оплате', preview: true},
+        {img: './images/gc-02.jpg', alt: 'Оформление тренинга и подтренингов', title: 'Оформление тренинга и подтренингов', preview: false},
+        {img: './images/gc-03.jpg', alt: 'Оформление тренинга таблицей', title: 'Оформление тренинга таблицей', preview: false},
+        {img: './images/gc-04.jpg', alt: 'Эффект при наведении мыши на название урока', title: 'Эффект при наведении мыши на название урока', preview: false},
+        {img: './images/gc-05.jpg', alt: 'Оформление урока', title: 'Оформление урока', preview: false},
+        {img: './images/gc-06.jpg', alt: 'Оформление урока', title: 'Оформление урока', preview: false},
+        {img: './images/gc-07.jpg', alt: 'Оформление задания к уроку', title: 'Оформление задания к уроку', preview: false},
+        {img: './images/gc-08.jpg', alt: 'Тест в задании к уроку', title: 'Тест в задании к уроку', preview: false},
+        {img: './images/gc-09.jpg', alt: 'Настройка логотипа и фавикона', title: 'Настройка логотипа и фавикона', preview: false},
+        {img: './images/gc-10.jpg', alt: 'Отображение письма в почте', title: 'Отображение письма в почте', preview: false},
+        {img: './images/gc-11.jpg', alt: 'Отображение письма в почте', title: 'Отображение письма в почте', preview: false},
+        {img: './images/gc-12.jpg', alt: 'Настройка цепочки писем', title: 'Настройка цепочки писем', preview: false},
+        {img: './images/gc-13.jpg', alt: 'Продукт, открывающий доступ к тренингу', title: 'Продукт, открывающий доступ к тренингу', preview: false},
+        {img: './images/gc-14.jpg', alt: 'Предложения в рамках одного продукта', title: 'Предложения в рамках одного продукта', preview: false},
+        {img: './images/gc-15.jpg', alt: 'Настройка предложения', title: 'Настройка предложения', preview: false},
+        {img: './images/gc-16.jpg', alt: 'Партнерская программа', title: 'Настройка промокода для партнерской программы', preview: false},
+        {img: './images/gc-17.jpg', alt: 'Настройка промокода на 4-й курс в подарок', title: 'Настройка промокода на 4-й курс в подарок', preview: false},
+        {img: './images/gc-18.jpg', alt: 'Настройка промокода на скидку', title: 'Настройка промокода на скидку тем, кто уже покупал что-либо', preview: false},
+        {img: './images/gc-19.jpg', alt: 'Заглушка перед вебинаром', title: 'Заглушка перед вебинаром', preview: false},
+        {img: './images/gc-20.jpg', alt: 'Пример выборки для сегмента', title: 'Пример выборки для сегмента', preview: false},
+        {img: './images/gc-21.jpg', alt: 'Настройка комиссии для партерской программы', title: 'Настройка комиссии для партерской программы', preview: false},
+        {img: './images/gc-22.jpg', alt: 'Форма записи на курс с выбором предложения', title: 'Форма записи на курс с выбором предложения', preview: false},
+        {img: './images/gc-23.jpg', alt: 'Дашборд для отчета по заказам', title: 'Дашборд для отчета по заказам', preview: false},
+        {img: './images/gc-24.jpg', alt: 'Чат-бот', title: 'Чат-бот в Telegram', preview: false},
+    ]
+
+
+
+.flex.flex-wrap.gap-5.justify-center.max-w-3xl.mx-auto.px-6
+    a.d-flex.justify-content-center(data-fancybox='gallery-a' href='./images/gc-01.jpg' data-caption='Процесс - напоминание об оплате')
+        img.rounded.w-75.grayscale(src='./images/gc-01.jpg' alt='Процесс - напоминание об оплате')
+    .d-none
+        each img in gcImages
+            if !img.preview
+                a(data-fancybox='gallery-a' href= img.img data-caption= img.title)
+                    img.rounded(src= img.img alt= img.alt)

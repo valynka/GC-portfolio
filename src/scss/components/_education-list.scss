@@ -1,0 +1,26 @@
+.education-list {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+
+    li {
+        font-size: map.get($font-sizes, 5);
+        margin-bottom: map.get($spacers, 3);
+        
+        &::before {
+            font-family: FontAwesome;
+            content: "\f19d";
+            margin-right: map.get($spacers, 2);
+        }
+
+        p {
+            margin: 0;
+            font-size: map.get($font-sizes, 6);
+            padding-left: map.get($spacers, 7);
+
+            &.period {
+                font-size: $font-size-sm;
+            }
+        }
+    }
+}

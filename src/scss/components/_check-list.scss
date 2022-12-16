@@ -1,13 +1,16 @@
 .check-list {
-    padding-left: 0;
-    list-style-type: none;
-    margin-bottom: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 
-    li {
-        &::before {
-            font-family: FontAwesome;
-            content: "\f00c";
-            margin-right: map.get($spacers, 2);
-        }
-    }
+	list-style-type: none;
+
+	li {
+		&::before {
+			margin-right: map.get($spacers, 2);
+
+			font-family: FontAwesome, sans-serif;
+
+			content: "\f00c";
+		}
+	}
 }

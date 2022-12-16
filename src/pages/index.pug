@@ -1,96 +1,94 @@
 doctype html
 html.h-100(lang='ru')
-    head
-        meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
 
-        title Valinka
+    title Valinka
 
-        link(href='https://use.fontawesome.com/bc7d3bd658.css' media='all' rel='stylesheet')
-        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css')
-        link(rel='stylesheet' href='styles/app.css')
+    link(href='https://use.fontawesome.com/bc7d3bd658.css' media='all' rel='stylesheet')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css')
+    link(rel='stylesheet' href='styles/app.css')
 
-    body.h-100 
-        .container-fluid.h-100.bg-dark
-            .row 
-                .col
-                    h1.text-white.text-uppercase.fs-8.ls-1.ls-md-3.pt-6.pb-6.text-center Valinka
-                    h2.text-white.text-uppercase.fs-7.ls-5.ls-md-2.pt-6.pb-6.text-center GetCourse
-        section.about-me.bg-light
-            .container-xl 
-                .row.pt-6.pb-6
-                    .col-md-7.col-12.d-flex.flex-column.justify-content-center.pe-4.order-2.order-md-1
-                        h2.mb-4 Привет!
-                        p
-                            | Меня зовут&nbsp;
-                            b Валерия. 
-                            | Я являюсь сертифицированным специалистом по настройке и администрированию платформы&nbsp;
-                            b GetCourse. 
-                            | Отлично знаю
-                            |
-                            b HTML
-                            |
-                            | и&nbsp;
-                            b CSS
-                            |, занимаюсь&nbsp;
-                            b frontend-разработкой. 
-                        p По образованию я редактор, а еще увлекаюсь фотографией и кинологией.
-                        p 
-                            | Ниже есть примеры работ на GetCourse. Портфолио frontend-разработчика и фотогалерею вы можете посмотреть на моем основном&nbsp;
-                            a.text-decoration-none.link-secondary(href='https://valinka.ru/' target='_blank' rel='noopener noreferrer') сайте.
-                    .col-md-5.col-12.d-flex.justify-content-center.order-1.order-md-2.mb-5.mb-md-0
-                        img.w-75.w-md-100.rounded-circle(src='./images/ava.jpg' alt='my photo')
-        section.skills.bg-dark.text-white
-            .container-xl
-                .row.pt-6 
-                    .col 
-                        h2.mb-4 Я помогу вам
-                .row.pb-6 
-                    .col-12.col-md-6 
-                        ul.check-list 
-                            li Настроить аккаунт, домен, почту
-                            li Создать и настроить тренинги и уроки
-                            li С работой с пользователями (импорт, экспорт, выборки, сегменты)
-                            li Создать сайт и рассылки
-                            li Настроить промоакции и партнерские программы
-                            li Построить и протестировать процессы
-                    .col-12.col-md-6
-                        ul.check-list 
-                            li Осуществить интеграцию с Telegram (чат-бот), VK
-                            li Настроить платежную систему
-                            li Создать продукты и предложения
-                            li С аналитикой (дашборды, статистика)
-                            li Отследить трафик (яндекс-метрика, каналы, метки)
-                            li Организовать и провести вебинар
-        section.portfolio.bg-light 
-            .container-xl 
-                .row.pt-6.pb-6
-                    .col 
-                        h2.mb-6.text-center Примеры работ
-                        include include/gallery.pug
-        section.education.bg-dark.text-white
-            .container-xl 
-                .row.pt-6
-                    .col 
-                       h2.mb-4 Курсы и образование
-                include include/education.pug
-        footer.bg-light
-            - const year = new Date().getFullYear(); 
-            .container-xl.pt-4.pb-4
-                ul.footer-list.border-bottom.mb-0.pb-3
-                    li
-                        i.fas.fa-home.me-3
-                        | Москва, Россия
-                    li
-                        i.fas.fa-envelope.me-3
-                        a.text-decoration-none.link-secondary(href='mailto:valerie-kras@mail.ru') valerie-kras@mail.ru
-                    li
-                        i.fas.fa-phone.me-3
-                        a.text-decoration-none.link-secondary(href='tel:+79250577959') +7 925 057 79 59
-                p.text-center.mb-0.mt-3 
-                    | ©
-                    | #{year}
-                    | Valinka.ru
-
-        script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')
-                    
+  body.h-100 
+    .container-fluid.h-100.bg-dark
+      .row 
+        .col
+          h1.text-white.text-uppercase.fs-8.ls-1.ls-md-3.pt-6.pb-6.text-center Valinka
+          h2.text-white.text-uppercase.fs-7.ls-5.ls-md-2.pt-6.pb-6.text-center GetCourse
+    section.about-me.bg-light
+      .container-xl 
+        .row.pt-6.pb-6
+          .col-md-7.col-12.d-flex.flex-column.justify-content-center.pe-4.order-2.order-md-1
+            h2.mb-4 Привет!
+            p
+              | Меня зовут&nbsp;
+              b Валерия. 
+              | Я являюсь сертифицированным специалистом по настройке и администрированию платформы&nbsp;
+              b GetCourse. 
+              | Отлично знаю
+              |
+              b HTML
+              |
+              | и&nbsp;
+              b CSS
+              |, занимаюсь&nbsp;
+              b frontend-разработкой. 
+            p По образованию я редактор, а еще увлекаюсь фотографией и кинологией.
+            p 
+              | Ниже есть примеры работ на GetCourse. Портфолио frontend-разработчика и фотогалерею вы можете посмотреть на моем основном&nbsp;
+              a.text-decoration-none.link-secondary(href='https://valinka.ru/' target='_blank' rel='noopener noreferrer') сайте.
+          .col-md-5.col-12.d-flex.justify-content-center.order-1.order-md-2.mb-5.mb-md-0
+            img.w-75.w-md-100.rounded-circle(src='./images/ava.jpg' alt='my photo')
+    section.skills.bg-dark.text-white
+      .container-xl
+        .row.pt-6 
+          .col 
+            h2.mb-4 Я помогу вам
+        .row.pb-6 
+          .col-12.col-md-6 
+            ul.check-list 
+              li Настроить аккаунт, домен, почту
+              li Создать и настроить тренинги и уроки
+              li С работой с пользователями (импорт, экспорт, выборки, сегменты)
+              li Создать сайт и рассылки
+              li Настроить промоакции и партнерские программы
+              li Построить и протестировать процессы
+          .col-12.col-md-6
+            ul.check-list 
+              li Осуществить интеграцию с Telegram (чат-бот), VK
+              li Настроить платежную систему
+              li Создать продукты и предложения
+              li С аналитикой (дашборды, статистика)
+              li Отследить трафик (яндекс-метрика, каналы, метки)
+              li Организовать и провести вебинар
+    section.portfolio.bg-light 
+      .container-xl 
+        .row.pt-6.pb-6
+          .col 
+            h2.mb-6.text-center Примеры работ
+            include include/gallery.pug
+    section.education.bg-dark.text-white
+      .container-xl 
+        .row.pt-6
+          .col 
+            h2.mb-4 Курсы и образование
+            include include/education.pug
+    footer.bg-light
+      - const year = new Date().getFullYear(); 
+      .container-xl.pt-4.pb-4
+        ul.footer-list.border-bottom.mb-0.pb-3
+          li
+            i.fas.fa-home.me-3
+            | Москва, Россия
+          li
+            i.fas.fa-envelope.me-3
+            a.text-decoration-none.link-secondary(href='mailto:valerie-kras@mail.ru') valerie-kras@mail.ru
+          li
+            i.fas.fa-phone.me-3
+            a.text-decoration-none.link-secondary(href='tel:+79250577959') +7 925 057 79 59
+        p.text-center.mb-0.mt-3 
+          | ©
+          | #{year}
+          | Valinka.ru
+    script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')                   

@@ -11677,9 +11677,16 @@ textarea.form-control-lg {
   }
 }
 .check-list {
+  display: grid;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .check-list {
+    grid-column-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .check-list li::before {
   margin-right: 0.5rem;
@@ -11688,9 +11695,16 @@ textarea.form-control-lg {
 }
 
 .education-list {
+  display: grid;
   margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .education-list {
+    grid-column-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .education-list li {
   margin-bottom: 1rem;
@@ -11744,7 +11758,7 @@ textarea.form-control-lg {
   opacity: 1;
 }
 .first-screen h2, .first-screen .h2 {
-  transform: translate(0, 120%);
+  transform: translate(0, 100%);
   opacity: 0;
   transition: all 0.8s ease 0.3s;
 }
@@ -11775,13 +11789,14 @@ textarea.form-control-lg {
   transform: translate(0, 0);
   opacity: 1;
 }
-.skills .check-list.left li {
-  transform: translate(-120%, 0);
+.skills .check-list li {
+  transform: translate(-150%, 0);
   transition: all 0.3s ease 0s;
 }
-.skills .check-list.right li {
-  transform: translate(120%, 0);
-  transition: all 0.3s ease 0s;
+@media (min-width: 768px) {
+  .skills .check-list li:nth-child(even) {
+    transform: translate(150%, 0);
+  }
 }
 .skills .check-list.visible li {
   transform: translate(0, 0);
@@ -11803,6 +11818,24 @@ textarea.form-control-lg {
 }
 .skills .check-list.visible li:nth-child(6) {
   transition: transform 0.8s ease 1.2s;
+}
+.skills .check-list.visible li:nth-child(7) {
+  transition: transform 0.8s ease 1.4s;
+}
+.skills .check-list.visible li:nth-child(8) {
+  transition: transform 0.8s ease 1.6s;
+}
+.skills .check-list.visible li:nth-child(9) {
+  transition: transform 0.8s ease 1.8s;
+}
+.skills .check-list.visible li:nth-child(10) {
+  transition: transform 0.8s ease 2s;
+}
+.skills .check-list.visible li:nth-child(11) {
+  transition: transform 0.8s ease 2.2s;
+}
+.skills .check-list.visible li:nth-child(12) {
+  transition: transform 0.8s ease 2.4s;
 }
 
 .portfolio h2, .portfolio .h2 {
@@ -11836,13 +11869,14 @@ textarea.form-control-lg {
   transform: translate(0, 0);
   opacity: 1;
 }
-.education .education-list.left li {
-  transform: translate(-120%, 0);
+.education .education-list li {
+  transform: translate(-150%, 0);
   transition: all 0.3s ease 0s;
 }
-.education .education-list.right li {
-  transform: translate(120%, 0);
-  transition: all 0.3s ease 0s;
+@media (min-width: 768px) {
+  .education .education-list li:nth-child(even) {
+    transform: translate(150%, 0);
+  }
 }
 .education .education-list.visible li {
   transform: translate(0, 0);
@@ -11861,6 +11895,18 @@ textarea.form-control-lg {
 }
 .education .education-list.visible li:nth-child(5) {
   transition: transform 0.8s ease 1s;
+}
+.education .education-list.visible li:nth-child(6) {
+  transition: transform 0.8s ease 1.2s;
+}
+.education .education-list.visible li:nth-child(7) {
+  transition: transform 0.8s ease 1.4s;
+}
+.education .education-list.visible li:nth-child(8) {
+  transition: transform 0.8s ease 1.6s;
+}
+.education .education-list.visible li:nth-child(9) {
+  transition: transform 0.8s ease 1.8s;
 }
 
 footer ul {

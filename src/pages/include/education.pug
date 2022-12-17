@@ -1,28 +1,20 @@
 - 
   const educationPlaces = [
-    {course: 'Верстальщик', school: 'Hexlet', period: '2022', column: 1},
-    {course: 'Капитан GetCourse', school: 'Школа GreenFreelance', period: '2022', column: 1},
-    {course: 'JavaScript', school: 'Hexlet', period: '2021', column: 1},
-    {course: 'JavaScript/DOM/Интерфейсы', school: 'JavaScript.ru', period: '2020', column: 1},
-    {course: 'HTML5 и CSS3', school: 'GeekBrains', period: '2020', column: 1},
-    {course: 'Интернет-маркетинг: продвижение и поисковая оптимизация сайтов (SEO)', school: '"Специалист" при МГТУ им.&nbsp;Баумана', period: '2018', column: 2},
-    {course: 'Основы программирования и баз данных', school: '"Специалист" при МГТУ им.&nbsp;Баумана', period: '2015', column: 2},
-    {course: 'HTML и CSS', school: 'HTML Academy', period: '2015', column: 2},
-    {course: 'Специалист книжного дела', school: 'МГУ Печати, факультет Издательского дела и журналистики', period: '2009', column: 2},
+    {course: 'Верстальщик', school: 'Hexlet', period: '2022'},
+    {course: 'Капитан GetCourse', school: 'Школа GreenFreelance', period: '2022'},
+    {course: 'JavaScript', school: 'Hexlet', period: '2021'},
+    {course: 'JavaScript/DOM/Интерфейсы', school: 'JavaScript.ru', period: '2020'},
+    {course: 'HTML5 и CSS3', school: 'GeekBrains', period: '2020'},
+    {course: 'Интернет-маркетинг: продвижение и поисковая оптимизация сайтов (SEO)', school: '"Специалист" при МГТУ им.&nbsp;Баумана', period: '2018'},
+    {course: 'Основы программирования и баз данных', school: '"Специалист" при МГТУ им.&nbsp;Баумана', period: '2015'},
+    {course: 'HTML и CSS', school: 'HTML Academy', period: '2015'},
+    {course: 'Специалист книжного дела', school: 'МГУ Печати, факультет Издательского дела и журналистики', period: '2009'},
   ]
 
-.row.pb-6     
-  .col-12.col-md-6 
-    ul.education-list.left.animated-item._not-hide
-      each place in educationPlaces
-        if place.column === 1
-          li!= place.school 
-            p!= place.course 
-            p= place.period       
-  .col-12.col-md-6
-    ul.education-list.right.animated-item._not-hide
-      each place in educationPlaces 
-        if place.column === 2
-          li!= place.school 
-            p!= place.course 
-            p.period= place.period
+
+ul.pb-6.education-list.animated-item._not-hide
+  each place in educationPlaces
+    li!= place.school 
+      p!= place.course 
+      p= place.period
+  

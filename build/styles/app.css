@@ -8491,8 +8491,12 @@ textarea.form-control-lg {
   letter-spacing: calc(1.425rem + 2.1vw) !important;
 }
 
-.ls-5 {
-  letter-spacing: 0.5rem !important;
+.ls-4 {
+  letter-spacing: 0.4rem !important;
+}
+
+.ls-25 {
+  letter-spacing: 0.25rem !important;
 }
 
 @media (min-width: 576px) {
@@ -9112,8 +9116,11 @@ textarea.form-control-lg {
   .ls-sm-3 {
     letter-spacing: calc(1.425rem + 2.1vw) !important;
   }
-  .ls-sm-5 {
-    letter-spacing: 0.5rem !important;
+  .ls-sm-4 {
+    letter-spacing: 0.4rem !important;
+  }
+  .ls-sm-25 {
+    letter-spacing: 0.25rem !important;
   }
 }
 @media (min-width: 768px) {
@@ -9733,8 +9740,11 @@ textarea.form-control-lg {
   .ls-md-3 {
     letter-spacing: calc(1.425rem + 2.1vw) !important;
   }
-  .ls-md-5 {
-    letter-spacing: 0.5rem !important;
+  .ls-md-4 {
+    letter-spacing: 0.4rem !important;
+  }
+  .ls-md-25 {
+    letter-spacing: 0.25rem !important;
   }
 }
 @media (min-width: 992px) {
@@ -10354,8 +10364,11 @@ textarea.form-control-lg {
   .ls-lg-3 {
     letter-spacing: calc(1.425rem + 2.1vw) !important;
   }
-  .ls-lg-5 {
-    letter-spacing: 0.5rem !important;
+  .ls-lg-4 {
+    letter-spacing: 0.4rem !important;
+  }
+  .ls-lg-25 {
+    letter-spacing: 0.25rem !important;
   }
 }
 @media (min-width: 1200px) {
@@ -10975,8 +10988,11 @@ textarea.form-control-lg {
   .ls-xl-3 {
     letter-spacing: calc(1.425rem + 2.1vw) !important;
   }
-  .ls-xl-5 {
-    letter-spacing: 0.5rem !important;
+  .ls-xl-4 {
+    letter-spacing: 0.4rem !important;
+  }
+  .ls-xl-25 {
+    letter-spacing: 0.25rem !important;
   }
 }
 @media (min-width: 1400px) {
@@ -11596,8 +11612,11 @@ textarea.form-control-lg {
   .ls-xxl-3 {
     letter-spacing: calc(1.425rem + 2.1vw) !important;
   }
-  .ls-xxl-5 {
-    letter-spacing: 0.5rem !important;
+  .ls-xxl-4 {
+    letter-spacing: 0.4rem !important;
+  }
+  .ls-xxl-25 {
+    letter-spacing: 0.25rem !important;
   }
 }
 @media (min-width: 1200px) {
@@ -11758,18 +11777,18 @@ textarea.form-control-lg {
   opacity: 1;
 }
 .first-screen h2, .first-screen .h2 {
-  transform: translate(0, 80%);
+  transform: translate(0, 120%);
   opacity: 0;
   transition: all 0.8s ease 0.3s;
 }
-@media (min-width: 768px) {
-  .first-screen h2, .first-screen .h2 {
-    transform: translate(0, 120%);
-  }
-}
 .first-screen h2.visible, .first-screen .visible.h2 {
-  transform: translate(0, 0);
+  transform: translate(0, -150%);
   opacity: 1;
+}
+@media (max-height: 400px) {
+  .first-screen h2.visible, .first-screen .visible.h2 {
+    transform: translate(0, 0);
+  }
 }
 
 .about-me .avatar,

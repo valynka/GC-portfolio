@@ -12,4 +12,11 @@ $spacers: map-merge(
         6: $spacer * 6,
         7: $spacer * 2,
     )
-)
+);
+
+$theme-colors: map-merge(
+    $theme-colors,
+    (
+        "dark": $gray-800,
+    )  
+);
